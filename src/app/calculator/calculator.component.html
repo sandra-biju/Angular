@@ -1,0 +1,6 @@
+<div style="position:absolute; background-color:aquamarine; left: 30%; top:20% ;width: 500px; height: 500px;">
+value1  <input type="text" (input)="value1=$event.target.value" value="{{value1}}"> {{value1}} <br>
+value2  <input type="text" (input)="value2=$event.target.value"  value="{{value2}}"> {{value2}} <br>
+Result  <input type="text"(input)="Result=$event.target.value"  value="{{Result}}"> {{Result}}
+<button (click)="add()">+</button>
+</div>
