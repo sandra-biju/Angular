@@ -1,6 +1,25 @@
-<div style="position:absolute; background-color:aquamarine; left: 30%; top:20% ;width: 500px; height: 500px;">
-value1  <input type="text" (input)="value1=$event.target.value" value="{{value1}}"> {{value1}} <br>
-value2  <input type="text" (input)="value2=$event.target.value"  value="{{value2}}"> {{value2}} <br>
-Result  <input type="text"(input)="Result=$event.target.value"  value="{{Result}}"> {{Result}}
-<button (click)="add()">+</button>
+<div style="position:absolute; background-color:lightpink; left: 30%; top:20% ;width: 500px; height: 500px;"><br>
+
+
+    <div *ngIf="operator==''">
+        <input type="text" (input)="value1=$event.target.value" value="{{value1}}"> 
+    </div>
+
+    <div *ngIf="operator!='' && operator!='='">
+        <input type="text" (input)="value2=$event.target.value" value="{{value2}}"> 
+    </div>
+    {{value1}}
+    {{value2}}
+    
+    <div *ngIf="operator=='='">
+        <input type="text" value="{{Result}}"> {{Result}}
+    </div>
+    <br><br>
+
+    <button *ngFor="let i of [1,2,3,4]" (click)="setValue(i)">{{i}}</button><br>
+    <button *ngFor="let i of [5,6,7,8]" (click)="setValue(i)">{{i}}</button><br>
+    <button *ngFor="let i of [9,0]" (click)="setValue(i)">{{i}}</button><br>
+    <button *ngFor="let i of ['+','-','*','/']" (click)="setOperator(i)">{{i}}</button><br>
+    <button *ngFor="let i of ['clr','=']" (click)="setOperator(i)">{{i}}</button><br>
+
 </div>
