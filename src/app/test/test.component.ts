@@ -8,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   colors:string[]=["Red","Blue","Green","Yellow"]
-
-  constructor() { }
-
-  ngOnInit(): void {
+  choice:string
+  test(){
+    console.log(this.choice)
   }
 
+  disabled='false'
+
+
+
+
+  constructor() { }
+  ngOnInit(): void {
+  }
 }

@@ -1,0 +1,37 @@
+<form action="" class="form-group" #myForm="ngForm">
+    <div class="form-group">
+        <label for="">Product Id</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="model.id" name="id" #ProductId="ngModel" required>
+
+        <div *ngIf="ProductId.invalid && (ProductId.dirty || ProductId.touched )" class="alert alert-danger">
+            Id won't be empty
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="">Name</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="model.name" name="name" #Name="ngModel" minlength="3" >
+        <div [hidden]="Name.valid || Name.untouched">
+            enter properly
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="">Price</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="model.price"name="price">
+    </div>
+    <div class="form-group">
+        <label for="">Product Discription</label>
+    </div>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="model.discription" name="discription">
+    </div>
+
+    <div>
+        <button class="btn btn-primary" (click)="saveProduct()" [disabled]="myForm.invalid ">Save</button>
+    </div>
+</form>
