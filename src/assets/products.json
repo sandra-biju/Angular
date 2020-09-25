@@ -1,0 +1,26 @@
+[
+    {
+        "pid":101,
+        "name":"Book",
+        "price":1000,
+        "discrption":"Product Book"
+    },
+    {
+        "pid":102,
+        "name":"Book2",
+        "price":2000,
+        "discrption":"Product Book2"
+    },
+    {
+        "pid":103,
+        "name":"Book3",
+        "price":3000,
+        "discrption":"Product Book3"
+    },
+    {
+        "pid":104,
+        "name":"Book4",
+        "price":4000,
+        "discrption":"Product Book4"
+    }
+]
