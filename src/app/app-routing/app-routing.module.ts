@@ -4,6 +4,7 @@ import { AnimationComponent } from '../animation/animation.component';
 import { CalculatorComponent } from '../calculator/calculator.component';
 import { EmployeeComponent } from '../employee/employee.component';
 import { ImageanimationComponent } from '../imageanimation/imageanimation.component';
+import { Material1Component } from '../material1/material1.component';
 import { NameEditorComponent } from '../name-editor/name-editor.component';
 import { ProductentryComponent } from '../productentry/productentry.component';
 import { ProductlistComponent } from '../productlist/productlist.component';
@@ -52,6 +53,10 @@ import { TestComponent } from '../test/test.component';
             path:"pagination",
             component:EmployeeComponent,
         },
+        {
+            path:"material1",
+            component:Material1Component,
+        }
 
     ];
 

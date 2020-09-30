@@ -18,7 +18,7 @@ export class NameEditorComponent implements OnInit {
       pincode: new FormControl()
     })
   })
-  register(){
+  register(){ 
     console.log(this.studentform.value)
   }
 

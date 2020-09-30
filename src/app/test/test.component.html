@@ -4,11 +4,13 @@
     {{color}}
 </div><br><br>
 
-<select name="" id="" (click)="choice=$event.target.value;test()">
-    <option value="" *ngFor="let color of colors" value="{{color}}">
+<select (click)="choice=$event.target.value;test()">
+    <option  *ngFor="let color of colors" value="{{color}}">
         {{color}}
     </option>
 </select> 
+
+
 <!-- ngStyle -->
 
 <p [ngStyle]="{'color':choice}">Meanstack Course</p><br>
